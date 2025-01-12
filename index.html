@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Mimic</title>
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toolbar -->
+  <div id="toolbar">
+    <button onclick="applyBold()">Bold</button>
+    <button onclick="applyItalic()">Italic</button>
+    <button onclick="applyColor()">Text Color</button>
+    <button onclick="applyTrim()">Trim</button>
+    <button onclick="applyUpper()">Upper</button>
+    <button onclick="applyLower()">Lower</button>
+    <button onclick="removeDuplicates()">Remove Duplicates</button>
+    <input type="text" id="find-text" placeholder="Find text">
+    <input type="text" id="replace-text" placeholder="Replace with">
+    <button onclick="findAndReplace(document.getElementById('find-text').value, document.getElementById('replace-text').value)">
+      Find & Replace
+    </button>
+    <input type="text" id="formula-bar" placeholder="Enter formula here...">
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Load</button>
+  </div>
+
+  <!-- Spreadsheet -->
+  <div id="spreadsheet"></div>
+
+  <!-- Link to script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+<button onclick="applyBold()">Bold</button>
+<button onclick="applyItalic()">Italic</button>
+<select onchange="applyFontSize(this.value)">
+  <option value="12">12px</option>
+  <option value="14">14px</option>
+  <option value="16">16px</option>
+  <option value="18">18px</option>
+</select>
+<input type="color" onchange="applyColor(this.value)">
+
+<button onclick="addRow()">Add Row</button>
+<button onclick="addColumn()">Add Column</button>
+<button onclick="resizeColumns()">Resize Columns</button>
+
+<button onclick="saveData()">Save</button>
+<button onclick="loadData()">Load</button>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="chart" width="400" height="200"></canvas>
+
+<button onclick="generateChart()">Generate Chart</button>

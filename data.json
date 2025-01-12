@@ -1,0 +1,4 @@
+[
+    { "content": "Data1", "style": { "fontWeight": "normal", "fontStyle": "normal", "color": "#000" } },
+    { "content": "Data2", "style": { "fontWeight": "bold", "fontStyle": "italic", "color": "#ff0000" } }
+  ]
