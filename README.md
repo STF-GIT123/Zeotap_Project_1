@@ -46,8 +46,6 @@ The objective of this project is to develop a web application that mimics the us
 
 ---
 
-Web Application Mimicking Google Sheets link : http://127.0.0.1:5500/index.html
-
 ## *Tech Stack Used*  
 
 ### *Frontend*  
@@ -169,7 +167,7 @@ Web Application Mimicking Google Sheets link : http://127.0.0.1:5500/index.html
 
 1. Clone the repository:  
    bash
-   git clone https://github.com/your-username/spreadsheet-mimic.git
+   git clone 
    cd spreadsheet-mimic
      
 
